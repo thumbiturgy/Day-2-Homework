@@ -1,0 +1,75 @@
+header{
+    bottom: 30px;
+}
+
+body, footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*My border isn't showing up*/
+.main{
+    align-items: center;
+    width: 60%;
+    padding: 30px;
+    border: black;
+    
+}
+.forgot{
+    margin: 100px;
+    position: inherit;
+}
+form{
+    width: fit-content;
+}
+
+/*Why won't this button resize for me?*/
+.submit{
+    background-color: orange;
+    width: max-content;
+}
+.new-acc{
+    position: relative;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    color: darkgray;
+    display: inline;
+}
+
+/*These lines completely overlapped with the text. Should be a way to isolate them on either side.*/
+.new-acc::before{
+    content: " ";
+    height: 2px;
+    width: 130px;
+    top: 50%;
+    left: 135px;
+    background: darkgray;
+    position: absolute;   
+}
+
+
+.new-acc::after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    top: 50%;
+    right: 135px;
+    background: darkgray;
+    position: absolute;
+}
+
+.foot-links{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin:10px 0px;
+    gap: 20px;
+}
+
